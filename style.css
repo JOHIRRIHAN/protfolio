@@ -1,0 +1,21 @@
+#circal{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.container{
+    display: inline-block;
+}
+.text{
+    font-size: 3rem;
+    border-right: 2px solid black;
+    width: 100%;
+    overflow: hidden;
+    animation: typing 2s steps(13),
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+@keyframes typing {
+    from {width: 0;}
+}
+
