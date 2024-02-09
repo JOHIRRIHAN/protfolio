@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- daisy ui link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script></head>
+    <!-- tailwind cs link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- css link  -->
     <link rel="stylesheet" href="loco.css">
     <link rel="stylesheet" href="style.css">
+    <!-- CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
-
-    
+</head>
 <body id="main">
-    <div id="circal" class="w-[15px] h-[15px] absolute z-[99999] rounded-[50%] bg-sky-700"></div>
+    <div id="circal" class="w-[15px] h-[15px] absolute
+      z-[99999] rounded-[50%] bg-sky-700"></div>
     <header>
         
         <!-- nav start  -->
@@ -24,10 +32,10 @@
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52 md:w-96">
-                    <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a>Home</a></li>
-                    <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="#">About</a></li>
-                    <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a>Portfolio</a></li>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52 md:w-96 absolute">
+                    <li class="text-2xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="index.html">Home</a></li>
+                    <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="about.html">About</a></li>
+                    <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="protfolio.html">Portfolio</a></li>
                     <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a>Contact</a></li>
                     <label class="swap swap-rotate">
   
@@ -48,9 +56,9 @@
             <!-- lg device menu  -->
             <div class="navbar-center hidden lg:flex sticky top-0">
               <ul class="menu menu-horizontal px-1 justify-between gap-x-10">
-                <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a>Home</a></li>
-                <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="#">About</a></li>
-                <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a>Portfolio</a></li>
+                <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="index.html">Home</a></li>
+                <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="about.html">About</a></li>
+                <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="protfolio.html">Portfolio</a></li>
                 <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a>Contact</a></li>
                 <label class="swap swap-rotate">
   
@@ -72,15 +80,21 @@
 
           <!-- hero start  -->
           <section id="home">
-            <div class="hero min-h-screen bg-base-200">
+            <div class="hero min-h-screen bg-base-200 ">
                 <div class="hero-content flex-col lg:flex-row-reverse lg:gap-x-36">
                   <img src="./asset/img/hero1.jpg" class="w-72 lg:w-96 rounded-lg shadow-2xl" />
                   <div class="lg:mr-40 container">
-                    <h1 class="text-6xl font-extrabold font-[poppins] tracking-tight text">Hi,<br> This is <span class="text-sky-600">Johir Rihan</span></h1>
-                    
-                    
+                    <h1 class="text-4xl lg:text-6xl font-extrabold font-[poppins] tracking-tight ">Hi,<br></h1>
+                   <div class="flex">
+                    <h1 class="text-4xl lg:text-6xl font-extrabold font-[poppins] tracking-tight mr-4">This is</h1>
+                    <h3 class="animate-charcter1"> JOHIR RIHAN</h3>
+                   </div>
                     <p class="text-blob font-extrabold text-3xl text-gray-600 font-[poppins] py-5 hover:text-sky-700"><span class="text-black">I'm</span> Frontend Developer</p>
-                    <button class="px-5 py-2 bg-sky-600 text-white font-semibold rounded hover:bg-sky-800 tracking-tight">See My Work</button>
+                    
+                    <div class="flex">
+                        <button class="px-4 py-2 bg-sky-600 hover:bg-sky-800 text-white font-semibold rounded  tracking-tight text-xl"><a class="text-decoration-none hover:text-white" href="https://github.com/JOHIRRIHAN">See My Work<i class='bx bxl-github text-2xl ml-3'></i></a></button>
+                        <button class="px-4 py-2 bg-sky-600 hover:bg-sky-800 text-white font-semibold rounded  tracking-tight text-xl ml-5"><a class="text-decoration-none hover:text-white" href="#">See My Resume<i class='bx bxs-cloud-download ml-3 text-2xl' ></i></a></button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -108,7 +122,7 @@
         <!-- My Skills section  -->
         <section>
             
-            <div class="bg-base-200 px-10 md:px-24 lg:px-20">
+            <div class="bg-base-200 px-10 md:px-24 lg:px-20 lg:pb-20">
                 <h1 id="about" class="bg-base-200 cursor-pointer text-5xl font-semibold text-sky-700  hover:underline underline-offset-4 text-center ">My Skills</h1>
                 <div class=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 py-16  lg:ml-10 gap-5 md:gap-9 lg:gap-0">
                     <div class="border rounded-[50%] bg-base-100 w-[6.5rem] h-[6.5rem] justify-center items-center flex shadow-2xl"><abbr title="1 Year Experience"><img class="w-14 h-14" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="html"></abbr>
@@ -134,54 +148,52 @@
                 </div>
             </div>
         </section>
-
         <!-- My portfolio  -->
         <section class="min-h-screen  bg-base-200 ">
             <h1 id="about" class="bg-base-200 cursor-pointer text-5xl font-semibold text-sky-700  hover:underline underline-offset-4 py-10 text-center">My Portfolio</h1>
             <div class="lg:px-16 py-20  bg-base-200">
                 <!-- card 1 -->
                 <div id="card1" class="card card-side lg:w-[90%] lg:h-72 bg-base-100 shadow-xl hover:shadow-2xl grid grid-cols-1   lg:grid-cols-2 mb-20">
-                    <figure><img class="lg:w-[99%] lg:h-72 p-2 lg:p-0" src="https://images.unsplash.com/photo-1505483531331-fc3cf89fd382?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Movie"/></figure>
+                    <figure><img class="lg:w-[99%] lg:h-72 object-cover  lg:p-0" src="./asset/img/power-x.png" alt="Movie"/></figure>
                     <div class="card-body lg:w-1/2 ">
-                      <h2 class="card-title text-3xl font-bold ">Portfolio 1</h2>
-                      <p class="lg:w-96 lg:h-32">Click the button to watch on Jetflix app. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, eius? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing </p>
-                      <div class="grid gap-10 grid-cols-2">
-                        <button class="bg-sky-600 w-24 h-10 text-white hover:bg-gray-600"><a href="#"><i class='bx bxl-github text-xl mr-2'></i>Github</a></button>
-                      <button class="bg-gray-600 w-24 h-10 text-white hover:bg-sky-600"><a href="#"><i class='bx bxl-linkedin-square text-xl mr-2'></i>Linkedin</a></button>
+                      <h2 class="card-title text-3xl font-bold ">Power X Website</h2>
+                      <p class="lg:w-96">THE BEST FITNESS STUDIO IN TOWN. WE ARE HERE TO DREAM!
+                        OUR TEAM IS HERE SURVE YOU. </p>
+                      <div class="grid gap-5 grid-cols-2">
+                        <button class="bg-sky-600 w-24 h-10 text-white hover:bg-gray-600"><a href="https://johirrihan.github.io/x_gym_master/"><i class='bx bxl-github text-xl mr-2'></i>Github</a></button>
+                      <button class="bg-gray-600 w-24 h-10 text-white hover:bg-sky-600"><a href="https://www.linkedin.com/in/johir-rihan-87391a257/"><i class='bx bxl-linkedin-square text-xl mr-2'></i>Linkedin</a></button>
                       </div>
                     </div>
                   </div>
                   <!-- card 2 -->
                 <div id="card2" class="card card-side lg:w-[90%] lg:h-72 bg-base-100 shadow-xl hover:shadow-2xl grid grid-cols-1   lg:grid-cols-2 mb-20">
-                    <figure><img class="lg:w-[99%] lg:h-72 p-2 lg:p-0" src="https://images.unsplash.com/photo-1508006728353-6ecef00dcbb8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Movie"/></figure>
+                    <figure><img class="lg:w-[99%] lg:h-72 p-2 lg:p-0" src="./asset/img/baaperbank.png" alt="Movie"/></figure>
                     <div class="card-body lg:w-1/2 ">
-                      <h2 class="card-title text-3xl font-bold ">Portfolio 2</h2>
+                      <h2 class="card-title text-3xl font-bold ">Baaper Bank</h2>
                       <p class="lg:w-96 lg:h-32">Click the button to watch on Jetflix app. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, eius? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing </p>
                       <div class="grid gap-10 grid-cols-2">
-                        <button class="bg-sky-600 w-24 h-10 text-white hover:bg-gray-600"><a href="#"><i class='bx bxl-github text-xl mr-2'></i>Github</a></button>
-                      <button class="bg-gray-600 w-24 h-10 text-white hover:bg-sky-600"><a href="#"><i class='bx bxl-linkedin-square text-xl mr-2'></i>Linkedin</a></button>
+                        <button class="bg-sky-600 w-24 h-10 text-white hover:bg-gray-600"><a href="https://johirrihan.github.io/bapper-bank/bank.html"><i class='bx bxl-github text-xl mr-2'></i>Github</a></button>
+                      <button class="bg-gray-600 w-24 h-10 text-white hover:bg-sky-600"><a href="https://www.linkedin.com/in/johir-rihan-87391a257/"><i class='bx bxl-linkedin-square text-xl mr-2'></i>Linkedin</a></button>
                       </div>
                     </div>
                   </div>
                   <!-- card 3 -->
                 <div id="card3" class="card card-side lg:w-[90%] lg:h-72 bg-base-100 shadow-xl hover:shadow-2xl grid grid-cols-1   lg:grid-cols-2">
-                    <figure><img class="lg:w-[99%] lg:h-72 p-2 lg:p-0" src="https://fixthephoto.com/images/content/adding-hair-in-photoshop-add-more-strands.png" alt="Movie"/></figure>
+                    <figure><img class="lg:w-[99%] lg:h-72 p-2 lg:p-0" src="./asset/img/e-school.png" alt="Movie"/></figure>
                     <div class="card-body lg:w-1/2 ">
-                      <h2 class="card-title text-3xl font-bold ">Portfolio 3</h2>
+                      <h2 class="card-title text-3xl font-bold ">E-School</h2>
                       <p class="lg:w-96 lg:h-32">Click the button to watch on Jetflix app. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, eius? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing </p>
                       <div class="grid gap-10 grid-cols-2">
-                        <button class="bg-sky-600 w-24 h-10 text-white hover:bg-gray-600"><a href="#"><i class='bx bxl-github text-xl mr-2'></i>Github</a></button>
-                      <button class="bg-gray-600 w-24 h-10 text-white hover:bg-sky-600"><a href="#"><i class='bx bxl-linkedin-square text-xl mr-2'></i>Linkedin</a></button>
+                        <button class="bg-sky-600 w-24 h-10 text-white hover:bg-gray-600"><a href="https://johirrihan.github.io/e_school/"><i class='bx bxl-github text-xl mr-2'></i>Github</a></button>
+                      <button class="bg-gray-600 w-24 h-10 text-white hover:bg-sky-600"><a href="https://www.linkedin.com/in/johir-rihan-87391a257/"><i class='bx bxl-linkedin-square text-xl mr-2'></i>Linkedin</a></button>
                       </div>
                     </div>
                   </div>
-                  <div class="pt-32 text-center">
-                    <button class="px-10 py-4 bg-sky-600 text-white font-semibold rounded hover:bg-sky-800 tracking-tight">See More..</button>
+                  <div class="pt-24 text-center">
+                    <button class="px-10 py-4 bg-sky-600 text-white font-semibold rounded hover:bg-sky-800 tracking-tight"><a href="protfolio.html">See More..</a></button>
                 </div>
             </div>
-            
         </section>
-
         <!-- contact section  -->
         <section class="min-h-screen">
             <div class="container mt-24 mx-auto md:px-6">
@@ -369,11 +381,29 @@
                 </div>
               </footer>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
         <!-- gsap cdn  -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- locomotive cdn  -->
         <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+        <!-- js link  -->
       <script src="./asset/img/script.js"></script>
+      <!-- swiper cdn  -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+               <!-- JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>
