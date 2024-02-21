@@ -13,14 +13,11 @@
     <!-- css link  -->
     <link rel="stylesheet" href="loco.css">
     <link rel="stylesheet" href="style.css">
-    <!-- swipper cdn  -->
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-           <!-- CSS CDN -->
-           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-           <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 </head>
 <body id="main">
@@ -28,113 +25,78 @@
     <header>
         
         <!-- nav start  -->
-        <div id="nav" class="navbar flex justify-between px-10 -py-9 shadow-2xl selection:bg-sky-700 selection:text-white sticky">
-            <div class="navbar-start ">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52 md:w-96 relative">
-                    <li class="text-2xl font-medium font-serif hover:text-sky-700 hover:underline"><a href="index.html">Home</a></li>
-                    <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline"><a href="about.html">About</a></li>
-                    <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline"><a href="protfolio.html">Portfolio</a></li>
-                    <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline"><a>Contact</a></li>
-                    <label class="swap swap-rotate">
-  
-                        <!-- this hidden checkbox controls the state -->
-                        <input type="checkbox" class="theme-controller" value="synthwave" />
-                        
-                        <!-- sun icon -->
-                        <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
-                        
-                        <!-- moon icon -->
-                        <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
-                        
-                      </label>
-                </ul>
+        <div id="nav" class="navbar flex justify-between  px-10 -py-9 shadow-2xl selection:bg-sky-700 selection:text-white">
+          <div class="navbar-start ">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
               </div>
-              <a class="w-28 "><img src="./asset/img/logo.png" alt=""></a>
-            </div>
-            <!-- lg device menu  -->
-            <div class="navbar-center hidden lg:flex sticky top-0">
-              <ul class="menu menu-horizontal px-1 justify-between gap-x-10">
-                <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="index.html">Home</a></li>
-                <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="about.html">About</a></li>
-                <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="protfolio.html">Portfolio</a></li>
-                <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a>Contact</a></li>
-                <label class="swap swap-rotate">
-  
-                    <!-- this hidden checkbox controls the state -->
-                    <input type="checkbox" class="theme-controller" value="synthwave" />
-                    
-                    <!-- sun icon -->
-                    <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
-                    
-                    <!-- moon icon -->
-                    <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52 md:w-96 absolute">
+                  <li class="text-2xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="index.html">Home</a></li>
+                  <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="#about.html">About</a></li>
+                  <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="#protfolio.html">Portfolio</a></li>
+                  <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="#contact.html">Contact</a></li>
+                  <label class="swap swap-rotate">
 
-                </label>
+                      <!-- this hidden checkbox controls the state -->
+                      <input type="checkbox" class="theme-controller" value="synthwave" />
+                      
+                      <!-- sun icon -->
+                      <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+                      
+                      <!-- moon icon -->
+                      <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+                      
+                    </label>
               </ul>
             </div>
+            <a class="w-28 "><img src="./asset/img/logo.png" alt=""></a>
           </div>
+          <!-- lg device menu  -->
+          <div class="navbar-center hidden lg:flex top-0">
+            <ul class="menu menu-horizontal px-1 justify-between gap-x-10">
+              <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="#index.html">Home</a></li>
+              <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="#about.html">About</a></li>
+              <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="#protfolio.html">Portfolio</a></li>
+              <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="#contact.html">Contact</a></li>
+              <label class="swap swap-rotate">
+
+                  <!-- this hidden checkbox controls the state -->
+                  <input type="checkbox" class="theme-controller" value="synthwave" />
+                  
+                  <!-- sun icon -->
+                  <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,
+                    0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+                  
+                  <!-- moon icon -->
+                  <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,
+                    10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+              </label>
+            </ul>
+          </div>
+        </div>
           <!-- nav end  -->
-
-    </header>
-    <main class=" bg-base-200">
-
-        <!-- My portfolio  -->
-        <section class="min-h-screen  bg-base-200 ">
-            <div class="container">
-                <div class="row">
-                  <div class="col-md-12 text-center">
-                    <h3 class="animate-charcter text-[40px] md:text-[70px] lg:text-[100px]"> Portfolio</h3>
-                  </div>
+          <div class="bg-base-200">
+            <div class="p-10">  
+              <!--Card 1-->
+              <div class="max-w-sm h-96 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
+                <img class="w-full" src="./asset/img/e-school.png" alt="Mountain" class="rounded-xl">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">Online School Website</div>
+                  <p class="text-gray-700 text-base">
+                    this is the E-School website.
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2 ">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer">#Source Code</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer">#Live Demo</span>
                 </div>
               </div>
-            <div class="lg:px-16 py-20  bg-base-200">
-                <!-- card 1 -->
-                <div id="card1" class="card card-side lg:w-[90%] lg:h-72 bg-base-100 shadow-xl hover:shadow-2xl grid grid-cols-1   lg:grid-cols-2 mb-20">
-                    <figure><img class="lg:w-[99%] lg:h-72 object-cover  lg:p-0" src="./asset/img/power-x.png" alt="Movie"/></figure>
-                    <div class="card-body lg:w-1/2 ">
-                      <h2 class="card-title text-3xl font-bold ">Power X Website</h2>
-                      <p class="lg:w-96">THE BEST FITNESS STUDIO IN TOWN. WE ARE HERE TO DREAM!
-                        OUR TEAM IS HERE SURVE YOU. </p>
-                      <div class="grid gap-5 grid-cols-2">
-                        <button class="bg-sky-600 w-24 h-10 text-white hover:bg-gray-600"><a href="https://johirrihan.github.io/x_gym_master/"><i class='bx bxl-github text-xl mr-2'></i>Github</a></button>
-                      <button class="bg-gray-600 w-24 h-10 text-white hover:bg-sky-600"><a href="https://www.linkedin.com/in/johir-rihan-87391a257/"><i class='bx bxl-linkedin-square text-xl mr-2'></i>Linkedin</a></button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 2 -->
-                <div id="card2" class="card card-side lg:w-[90%] lg:h-72 bg-base-100 shadow-xl hover:shadow-2xl grid grid-cols-1   lg:grid-cols-2 mb-20">
-                    <figure><img class="lg:w-[99%] lg:h-72 p-2 lg:p-0" src="./asset/img/baaperbank.png" alt="Movie"/></figure>
-                    <div class="card-body lg:w-1/2 ">
-                      <h2 class="card-title text-3xl font-bold ">Baaper Bank</h2>
-                      <p class="lg:w-96 lg:h-32">Click the button to watch on Jetflix app. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, eius? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing </p>
-                      <div class="grid gap-10 grid-cols-2">
-                        <button class="bg-sky-600 w-24 h-10 text-white hover:bg-gray-600"><a href="https://johirrihan.github.io/bapper-bank/bank.html"><i class='bx bxl-github text-xl mr-2'></i>Github</a></button>
-                      <button class="bg-gray-600 w-24 h-10 text-white hover:bg-sky-600"><a href="https://www.linkedin.com/in/johir-rihan-87391a257/"><i class='bx bxl-linkedin-square text-xl mr-2'></i>Linkedin</a></button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 3 -->
-                <div id="card3" class="card card-side lg:w-[90%] lg:h-72 bg-base-100 shadow-xl hover:shadow-2xl grid grid-cols-1   lg:grid-cols-2">
-                    <figure><img class="lg:w-[99%] lg:h-72 p-2 lg:p-0" src="./asset/img/e-school.png" alt="Movie"/></figure>
-                    <div class="card-body lg:w-1/2 ">
-                      <h2 class="card-title text-3xl font-bold ">E-School</h2>
-                      <p class="lg:w-96 lg:h-32">Click the button to watch on Jetflix app. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, eius? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing </p>
-                      <div class="grid gap-10 grid-cols-2">
-                        <button class="bg-sky-600 w-24 h-10 text-white hover:bg-gray-600"><a href="https://johirrihan.github.io/e_school/"><i class='bx bxl-github text-xl mr-2'></i>Github</a></button>
-                      <button class="bg-gray-600 w-24 h-10 text-white hover:bg-sky-600"><a href="https://www.linkedin.com/in/johir-rihan-87391a257/"><i class='bx bxl-linkedin-square text-xl mr-2'></i>Linkedin</a></button>
-                      </div>
-                    </div>
-                  </div>
             </div>
-        </section>
-       
-
-</main>
-        
+          </div>
+    </header>
+ 
+        <footer>
             <footer class="footer p-10 bg-base-200 text-base-content lg:px-20">
                 <nav>
                   <h6 class="footer-title">Services</h6> 
@@ -172,7 +134,7 @@
                     <a href="#"><i class='bx bxl-pinterest text-4xl text-red-700 border-b-2 border-sky-600' ></i></a>
                 </div>
               </footer>
-            
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
         <!-- gsap cdn  -->
@@ -184,18 +146,5 @@
       <!-- swiper cdn  -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-               <!-- JS CDN -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>
