@@ -45,7 +45,7 @@ function plusDivs(n) {
 function currentDiv(n) {
   showDivs(slideIndex = n);
 }
-
+currentDiv();
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -61,7 +61,7 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-red";
 }
-
+showDivs();
 document.addEventListener('DOMContentLoaded', function() {
     // open
     const burger = document.querySelectorAll('.navbar-burger');

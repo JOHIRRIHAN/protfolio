@@ -81,7 +81,7 @@
     text-decoration: none;
 }
 #gooey{
-  filter: blur(1px);
+  /* filter: blur(1px); */
   animation-name: gooey;
   animation-duration: 4s;
   animation-iteration-count: infinite;
