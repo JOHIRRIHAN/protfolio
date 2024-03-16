@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #circal{
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
@@ -80,19 +84,34 @@
 .px-4{
     text-decoration: none;
 }
-#gooey{
-  /* filter: blur(1px); */
-  animation-name: gooey;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+
+
+#img__animatate{
+  animation: profile 8s ease-in-out infinite 1s;
+  box-shadow: inset 0 0 0 9px rgba(255, 0, 0, 0.3);
+
 }
-@keyframes gooey {
-  from{
-      transform: translate(10%, -10%);
+@keyframes profile {
+  0%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
-  to{
-      transform: translate(-10%, 10%);
+  50%{
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
   }
+  100%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+
+#zoom {
+  
+  transition: all 2s;
+
+  transform: scale(1);
+}
+
+#zoom:hover img {
+  transform: scale(1.1);
+  transition: all 1s;
 }

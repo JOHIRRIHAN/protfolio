@@ -14,11 +14,15 @@
     <!-- css link  -->
     <link rel="stylesheet" href="loco.css">
     <link rel="stylesheet" href="style.css">
-    <!-- CSS CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- emailjs link    -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("p_BzoBRjpW27sgp-r");
+        })();
+        </script>
 
 </head>
 <body id="main">
@@ -26,7 +30,7 @@
       z-[99999] rounded-[50%] bg-sky-700">
     </div>
     <header>
-        <!-- nav start  -->
+        <!--================================ nav start  ================================-->
         <div id="nav" class="navbar flex justify-between  px-10 -py-9 shadow-2xl selection:bg-sky-700 selection:text-white">
             <div class="navbar-start ">
               <div class="dropdown">
@@ -40,7 +44,7 @@
                     <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="#contact.html">Contact</a></li>
                     <label class="swap swap-rotate">
   
-                        <!-- this hidden checkbox controls the state -->
+                        <!--========== this hidden checkbox controls the state ======-->
                         <input type="checkbox" class="theme-controller" value="synthwave" />
                         
                         <!-- sun icon -->
@@ -54,7 +58,7 @@
               </div>
               <a class="w-28"><img src="./asset/img/logo.png" alt=""></a>
             </div>
-            <!-- lg device menu  -->
+            <!--===================== lg device menu  ========================-->
             <div class="navbar-center hidden lg:flex top-0">
               <ul class="menu menu-horizontal px-1 justify-between gap-x-10">
                 <li class="text-xl font-medium font-serif hover:text-sky-700 hover:underline hover:under"><a href="#index.html">Home</a></li>
@@ -77,23 +81,25 @@
               </ul>
             </div>
           </div>
-          <!-- nav end -->
-          <!-- hero start -->
+          <!--=============================== nav end ============================-->
+
+
+          <!--=============================== hero start =========================-->
           <section id="home">
             <div class="hero bg-base-200">
                 <div class="hero-content flex-col lg:flex-row-reverse lg:gap-x-36">
-                  <img src="./asset/img/protfolio-profile-pic.jpeg" class="w-72 lg:w-80 rounded-lg shadow-2xl" />
-                  <div class="lg:mr-40 container">
-                    <h1 class="text-3xl lg:text-6xl font-extrabold font-[poppins] tracking-tight ">Hi,<br></h1>
+                  <img id="img__animatate" src="./asset/img/protfolio-profile-pic.jpeg" class="w-44 md:w-72 lg:w-72 rounded-lg shadow-2xl" />
+                  <div class="lg:mr-20 container">
+                    <h1 class="text-3xl lg:text-5xl font-extrabold font-[poppins] tracking-tight ">Hi,<br></h1>
                    <div class="flex">
-                    <h1 class="text-3xl lg:text-6xl font-extrabold font-[poppins] tracking-tight mr-4">This is</h1>
+                    <h1 class="text-3xl lg:text-5xl font-extrabold font-[poppins] tracking-tight mr-2 lg:mr-10">This is</h1>
                     <h3 class="animate-charcter1"> JOHIR RIHAN</h3>
                    </div>
                     <p class="text-blob font-extrabold text-2xl lg:text-3xl text-gray-600 font-[poppins] py-5 hover:text-sky-700"><span class="text-black">I'm</span> Frontend Developer</p>
                     
                     <div class="flex">
                         <button class="px-3 lg:px-4 py-2 bg-sky-600 hover:bg-sky-800 text-white font-semibold rounded  tracking-tight text-sm lg:text-xl">
-                          <a class="text-decoration-none hover:text-white" href="https://github.com/JOHIRRIHAN?tab=repositories">See My Work<i class='bx bxl-github text-lg lg:text-2xl ml-3'></i></a></button>
+                          <a class="text-decoration-none hover:text-white" target="_blank" href="https://github.com/JOHIRRIHAN?tab=repositories">See My Work<i class='bx bxl-github text-lg lg:text-2xl ml-3'></i></a></button>
                         <button class="px-3 lg:px-4 py-2 bg-sky-600 hover:bg-sky-800 text-white font-semibold rounded tracking-tight text-sm lg:text-xl ml-5">
                           <a href="./asset/img/Johir Rihan Resume.pdf" target="_blank">See My Resume</a>
                           <i class='bx bxs-cloud-download ml-3 text-lg lg:text-2xl'></i>
@@ -106,7 +112,7 @@
           </section>
     </header>
     <main class=" bg-base-200">
-        <!-- about section  -->
+        <!--=============== about section  ======================================-->
         <section>
           <div class="container">
             <div class="row">
@@ -118,7 +124,9 @@
             <div class="hero py-[5rem] bg-base-200">
                 
                 <div class="hero-content flex-col lg:flex-row gap-2 lg:gap-20 lg:ml-20">
-                  <img id="gooey" src="./asset/img/hero1.jpg" class="w-64 lg:w-72 h-64 lg:h-72 object-cover rounded-[50%] shadow-2xl" />
+                  <div  id="zoom">
+                    <img id="gooey" src="./asset/img/hero1.jpg" class="w-64 lg:w-72 h-64 lg:h-72 object-cover rounded-xl  shadow-2xl" />
+                  </div>
                   <div class="lg:w-1/2">
                     
                     <p class=" lg:text-lg font-medium text-[#555555]  p-5">Hello, everyone. My name's <span class="text-4xl font-semibold text-sky-700">Johir Rihan</span>. you can call me Rihan . I am 23 years old & I am a Bangladeshi , I was born at Dhaka in Bangladesh . I have completed Diploma in web Application and web Development in Sheikh Hasina National Institute of Youth Development. I also Expert in Frontend Development ( React js || Tailwind CSS || HTML5 || CSS3 || JavaScript || jQuery || Bootstrap5 ) . I can provide clean code and pixel perfect design . I also make the website more & more interactive with web animations . A responsive design make your website accessible to ll users, regardless of their device.</p>
@@ -127,7 +135,7 @@
                 </div>
               </div>
         </section>
-        <!-- My Skills section  -->
+        <!--==================== My Skills section  ==========================-->
         <section>
             <div class="bg-base-200 px-10 md:px-24 lg:px-20">
               <div class="container">
@@ -161,19 +169,19 @@
                 </div>
             </div>
         </section>
-        <!-- My portfolio  -->
+        <!--=========================== My portfolio  ===========================-->
         <section>
           <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center ">
-                    <h3 class="animate-charcter text-[3rem] lg:text-[4rem] font-bold">My Portfolio</h3>
+                    <h3 class="animate-charcter text-[3rem] lg:text-[4rem] font-bold mb-10">My Portfolio</h3>
                 </div>
             </div>
         </div>
           <div class="bg-base-200">
-            <div class="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">  
+            <div class=" ml-[2rem] px-[10px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">  
               <!--Card 1-->
-              <div class="max-w-sm h-96 mb-10  bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
+              <div class="w-[250px] md:w-[300px] lg:max-w-sm h-96 mb-10  bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
                 <img class="w-full" src="./asset/img/e-school.png" alt="Mountain" class="rounded-xl">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">Online School Website</div>
@@ -187,7 +195,7 @@
                 </div>
               </div>
               <!--Card 2-->
-              <div class="max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
+              <div class="w-[250px] md:w-[300px] lg:max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
                 <img class="w-full" src="./asset/img/power-x.png" alt="Mountain" class="rounded-xl">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">Power X Website</div>
@@ -201,7 +209,7 @@
                 </div>
               </div>
               <!--Card 3-->
-              <div class="max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
+              <div class="w-[250px] md:w-[300px] lg:max-w-sm min-h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
                 <img class="w-full" src="./asset/img/baaperbank.png" alt="Mountain" class="rounded-xl">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">Bapper Ar Bank Website</div>
@@ -218,7 +226,7 @@
                 </div>
               </div>
               <!--Card 4-->
-              <div class="max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
+              <div class="w-[250px] md:w-[300px] lg:max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
                 <img class="w-full" src="./asset/img/camera shop.png" alt="Mountain" class="rounded-xl">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">Camera shop</div>
@@ -232,7 +240,7 @@
                 </div>
               </div>
               <!--Card 5-->
-              <div class="max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
+              <div class="w-[250px] md:w-[300px] lg:max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
                 <img class="w-full" src="./asset/img/sundown.png" alt="Mountain" class="rounded-xl">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">Sundown Studio Website</div>
@@ -246,7 +254,7 @@
                 </div>
               </div>
               <!--Card 6-->
-              <div class="max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
+              <div class="w-[250px] md:w-[300px] lg:max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
                 <img class="w-full" src="./asset/img/tea store.png" alt="Mountain" class="rounded-xl">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">Tea Store Website</div>
@@ -260,7 +268,7 @@
                 </div>
               </div>
               <!--Card 7-->
-              <div class="max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
+              <div class="w-[250px] md:w-[300px] lg:max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
                 <img class="w-full" src="./asset/img/two-good.png" alt="Mountain" class="rounded-xl">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">Two Good Co Website</div>
@@ -274,7 +282,7 @@
                 </div>
               </div>
               <!--Card 8-->
-              <div class="max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
+              <div class="w-[250px] md:w-[300px] lg:max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
                 <img class="w-full" src="./asset/img/bike shop.png" alt="Mountain" class="rounded-xl">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">E-Comers Website</div>
@@ -288,7 +296,7 @@
                 </div>
               </div>
               <!--Card 8-->
-              <div class="max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
+              <div class="w-[250px] md:w-[300px] lg:max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
                 <img class="w-full" src="./asset/img/ecommers.png" alt="Mountain" class="rounded-xl">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">E-Comers Website</div>
@@ -302,7 +310,7 @@
                 </div>
               </div>
               <!--Card 8-->
-              <div class="max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
+              <div class="w-[250px] md:w-[300px] lg:max-w-sm h-96 mb-10 bg-white rounded-[15px] overflow-hidden shadow-lg hover:shadow-md hover:shadow-blue-700">
                 <img class="w-full" src="./asset/img/fruits shop.png" alt="Mountain" class="rounded-xl">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">Fruits Shop Website</div>
@@ -319,7 +327,7 @@
             </div>
           </div>
         </section>
-        <!-- contact section  -->
+        <!--=============================== contact section  ========================-->
         <section class="bg-base-200 flex justify-center items-center">
           <div class="container md:px-6">
               <!-- Section: Design Block -->
@@ -373,11 +381,16 @@
                           </div>
                       </div>
                       <form class="ml-auto space-y-4" style="max-width: 700px;">
-                        <input type='text' placeholder='Name' class="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]" style="width: calc(100% - 32px);" />
-                        <input type='email' placeholder='Email' class="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]" style="width: calc(100% - 32px);" />
-                        <input type='text' placeholder='Subject' class="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]" style="width: calc(100% - 32px);" />
-                        <textarea placeholder='Message' rows="6" class="w-full rounded-md px-4 bg-gray-100 text-sm pt-3 outline-[#007bff]" style="width: calc(100% - 32px);"></textarea>
-                        <button type='button' class="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-3 w-full" style="width: calc(100% - 32px);">Send</button>
+
+                        <input type='text' id="name" name="name" placeholder='Name' class="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]" style="width: calc(100% - 32px);" />
+
+                        <input type='email' id="email" name="email" placeholder='Email' class="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]" style="width: calc(100% - 32px);" />
+
+                        <input type='text' id="subject" name="subject" placeholder='Subject' class="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]" style="width: calc(100% - 32px);" />
+
+                        <textarea placeholder='Message' id="message" name="message" rows="6" class="w-full rounded-md px-4 bg-gray-100 text-sm pt-3 outline-[#007bff]" style="width: calc(100% - 32px);"></textarea>
+
+                        <button onclick="mailSend()" type='button' class="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-3 w-full" style="width: calc(100% - 32px);">Send</button>
                     </form>
                     
                   </div>
@@ -434,5 +447,6 @@
       <script src="./asset/img/script.js"></script>
       <!-- swiper cdn  -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="script.js"></script>
 </body>
 </html>
