@@ -24,3 +24,9 @@ function clearForm() {
     document.getElementById("subject").value = "";
     document.getElementById("message").value = "";
 }
+
+    // JavaScript to toggle the visibility of the dropdown menu
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+        var menu = document.getElementById("dropdown-menu");
+        menu.classList.toggle("hidden");
+    });
